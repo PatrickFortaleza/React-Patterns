@@ -1,14 +1,11 @@
 import "./App.css";
 import Singleton from "./Patterns/Singleton";
-import { personProxy } from "./Patterns/Proxy/person";
+import Provider from "./Patterns/Provider/Index";
 
 function App() {
-  personProxy.name;
-  personProxy.age = 43;
-
   return (
     <div className="App">
-      <Singleton />
+      <Provider />
     </div>
   );
 }

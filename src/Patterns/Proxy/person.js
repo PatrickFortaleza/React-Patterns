@@ -70,3 +70,6 @@ const personProxy = new Proxy(person, {
 
 // PERFORMANCE
 // Overusing the Proxy object or performing heavy operations on each handler method invocation can easily affect the performance of your application negatively. It's best to not use proxies for performance-critical code.
+
+personProxy.name; // calls the get method in the proxy
+personProxy.age = 43; // calls the set method in the proxy
